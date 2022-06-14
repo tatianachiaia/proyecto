@@ -1,0 +1,122 @@
+$fadewhite: rgba(250, 250, 250, 0.85);
+
+/* Media */ 
+
+@media screen and (max-width:1000px){
+    .grid-collab {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1/2fr);
+        grid-template-areas: 
+        "text1" "photo1"
+        "text2" "photo2"
+        "text3" "photo3"
+        "text4" "photo4"
+        "text5" "photo5"
+        "text6" "photo6";
+    }
+    .ford iframe {
+        width:660px;
+        height:371px; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header .navbar {
+        position: relative;
+        .menu-bar {
+            display: block;
+            grid-column: 8 / 9;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .menu {
+            position: absolute;
+            width: 30%;
+            height: 293px;
+            display: grid;
+            align-items:center;
+            background: $fadewhite;
+            margin-top: 343px;
+            transform: translateX(350%); 
+        }
+        .menu-toggle {
+            transform: translateX(240%);
+        } 
+        .logo {
+            grid-column: 2 / 7;
+        }
+    }
+    .grid-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1/2;
+        grid-template-areas: 
+        "text1" "photo1"; 
+    }
+    .grid-lifestyle {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1/2fr );
+        grid-template-areas: 
+        "text1" "photo1"
+        "text2" "photo2"
+        "text3" "photo3";
+    }
+    .introcollab {
+        padding: 30px;
+        text-align: center;
+        height: 20%;
+    }
+    .ford iframe {
+        width: 500px;
+        height:281px; 
+    }
+    .footer .icono {
+        color: rgb(181, 65, 194);
+    }
+}
+
+@media screen and (max-width: 540px){
+    .flexboxhome 
+    .category {
+    width: 100%;
+    flex-direction: column;
+    }
+    header .navbar .menu {
+        position: absolute;
+        width: 45%;
+        height: 250px;
+        display: grid;
+        align-items:center;
+        background: $fadewhite;
+        margin-top: 300px;
+        transform: translateX(250%);    
+    }
+    header .navbar .menu-toggle {
+        transform: translateX(125%);
+    } 
+    .ford iframe {
+        width: 400px;
+        height:225px; 
+    }
+    .ford iframe {
+        width: 390px;
+        height: 220px; 
+    }
+}
+
+@media screen and (max-width:450px){
+    .aboutimg {
+    height: 390px;
+    }
+    .ford iframe {
+        width: 340px;
+        height:191px; 
+    }   
+}
+
+@media screen and (max-width: 370px){
+    .ford iframe {
+        width: 258px;
+        height:145px; 
+    }   
+}
